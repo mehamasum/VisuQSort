@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">visuQSort</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="credit">
+        <big>The Starks of Winterfell</big>
+
+    </string>
+
+    <string name="algo">
+        \n\t<big>How does it work?</big> \n
+
+    </string>
+
+    <string name="title_activity_simulation">Simulation</string>
+    <string name="title_activity_theory">How does it work?</string>
+    <string name="title_activity_credits">Credits</string>
+    <string name="title_activity_input">User Input</string>
+    <string name="title_activity_data_changer">Change data set</string>
+</resources>

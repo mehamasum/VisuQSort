@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            style="?android:attr/buttonStyle"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+
+            android:background="@color/mainPurp"
+            android:onClick="userInput"
+            >
+
+            <TextView
+                style="?android:attr/buttonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:clickable="false"
+
+                android:focusable="false"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+
+                android:drawableLeft="@drawable/ic_action_user_input"
+                android:textColor="@color/mainWhite"
+
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-condensed"
+                android:text=" User Input" />
+        </FrameLayout>
+
+        <FrameLayout
+            style="?android:attr/buttonStyle"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+
+            android:background="@color/mainRed"
+            android:onClick="simulation"
+            >
+
+            <TextView
+                style="?android:attr/buttonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:clickable="false"
+
+                android:focusable="false"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+
+                android:drawableLeft="@drawable/ic_action_random_input"
+                android:textColor="@color/mainWhite"
+
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-condensed"
+                android:text=" Auto Input" />
+        </FrameLayout>
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            style="?android:attr/buttonStyle"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+
+            android:background="@color/mainCyan"
+            android:onClick="theory"
+            >
+
+            <TextView
+                style="?android:attr/buttonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:clickable="false"
+
+                android:focusable="false"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+
+                android:drawableLeft="@drawable/ic_action_algo"
+                android:textColor="@color/mainGray"
+
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-condensed"
+                android:text=" Algorithm" />
+        </FrameLayout>
+
+        <FrameLayout
+            style="?android:attr/buttonStyle"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+
+            android:background="@color/mainKolaPata"
+            android:onClick="credits"
+            >
+
+            <TextView
+                style="?android:attr/buttonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:clickable="false"
+
+                android:focusable="false"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+
+                android:drawableLeft="@drawable/ic_action_about"
+                android:textColor="@color/mainGray"
+
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-condensed"
+                android:text=" About" />
+        </FrameLayout>
+
+    </TableRow>
+
+
+
+</TableLayout>

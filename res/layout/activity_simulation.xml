@@ -1,0 +1,93 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Simulation"
+    android:clickable="true"
+    android:background="#EFE4B0"
+    android:id="@+id/ll">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Starting Simulation!"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/describe"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:background="@drawable/buttonstyle"
+
+        android:fontFamily="sans-serif-condensed"
+        android:drawableLeft="@drawable/ic_pause"
+        android:id="@+id/bPause"
+        android:clickable="true"
+        android:onClick="pause"
+        android:layout_below="@+id/describe"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+        android:text="Edit Data"
+        android:fontFamily="sans-serif-condensed"
+        android:drawableRight="@drawable/ic_edit"
+        android:background="@drawable/buttonstyle"
+
+        android:id="@+id/editButton"
+        android:clickable="true"
+        android:onClick="change_data"
+        android:layout_alignTop="@+id/bPause"
+        android:layout_toRightOf="@+id/bPause"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/buttonstyle"
+
+        android:drawableLeft="@drawable/ic_rewind"
+        android:id="@+id/bRestart"
+        android:clickable="true"
+        android:onClick="restart"
+        android:layout_alignTop="@+id/bPause"
+        android:layout_toLeftOf="@+id/bPause" />
+
+    <SeekBar
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/speedBar"
+        android:max="10"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Animation Speed : "
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/speedView"
+        android:layout_above="@+id/speedBar"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

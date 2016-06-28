@@ -1,0 +1,235 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".dataChanger"
+    android:background="@color/mainBG"
+    android:clickable="true"
+    android:id="@+id/cLay"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Touch any array element to select. "
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/oldText"
+        android:layout_marginTop="70dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Value : "
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/newText"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:layout_below="@+id/oldText"
+        android:layout_alignLeft="@+id/oldText"
+        android:layout_alignStart="@+id/oldText" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="@dimen/abc_action_bar_progress_bar_size"
+        android:text="7"
+        android:id="@+id/sevenS"
+        android:textColor="@color/textGray"
+        android:background="@drawable/buttonstyle"
+        android:layout_below="@+id/fourS"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="200dp"
+        android:onClick="button_7"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="@dimen/abc_action_bar_progress_bar_size"
+        android:text="6"
+        android:id="@+id/sixS"
+        android:textColor="@color/textGray"
+        android:background="@drawable/buttonstyle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/twoS"
+        android:layout_toRightOf="@+id/fiveS"
+        android:layout_toEndOf="@+id/fiveS"
+        android:onClick="button_6"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="@dimen/abc_action_bar_progress_bar_size"
+        android:text="1"
+        android:fontFamily="sans-serif-condensed"
+
+        android:id="@+id/oneS"
+        android:textColor="@color/textGray"
+        android:background="@drawable/buttonstyle"
+        android:layout_below="@+id/newText"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="200dp"
+        android:onClick="button_1"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="@dimen/abc_action_bar_progress_bar_size"
+        android:text="3"
+        android:fontFamily="sans-serif-condensed"
+
+        android:id="@+id/threeS"
+        android:textColor="@color/textGray"
+        android:background="@drawable/buttonstyle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/newText"
+        android:layout_toRightOf="@+id/twoS"
+        android:layout_toEndOf="@+id/twoS"
+        android:onClick="button_3"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="@dimen/abc_action_bar_progress_bar_size"
+        android:text="0"
+        android:fontFamily="sans-serif-condensed"
+
+        android:id="@+id/zeroS"
+        android:textColor="@color/textGray"
+        android:background="@drawable/buttonstyle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/eightS"
+        android:layout_toRightOf="@+id/delS"
+        android:layout_toEndOf="@+id/delS"
+        android:onClick="button_0"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="@dimen/abc_action_bar_progress_bar_size"
+        android:text="4"
+        android:fontFamily="sans-serif-condensed"
+
+        android:id="@+id/fourS"
+        android:textColor="@color/textGray"
+        android:background="@drawable/buttonstyle"
+        android:layout_below="@+id/oneS"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="200dp"
+        android:onClick="button_4"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="@dimen/abc_action_bar_progress_bar_size"
+        android:text="DEL"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/delS"
+        android:textColor="@color/textGray"
+        android:background="@drawable/buttonstyle"
+        android:layout_below="@+id/sevenS"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="200dp"
+        android:onClick="button_del"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="@dimen/abc_action_bar_progress_bar_size"
+        android:text="5"
+        android:fontFamily="sans-serif-condensed"
+
+        android:id="@+id/fiveS"
+        android:textColor="@color/textGray"
+        android:background="@drawable/buttonstyle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/twoS"
+        android:layout_toRightOf="@+id/fourS"
+        android:layout_toEndOf="@+id/fourS"
+        android:onClick="button_5"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="@dimen/abc_action_bar_progress_bar_size"
+        android:text="SET"
+        android:fontFamily="sans-serif-condensed"
+
+        android:id="@+id/addS"
+        android:textColor="@color/textGray"
+        android:background="@drawable/buttonstyle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/eightS"
+        android:layout_toRightOf="@+id/zeroS"
+        android:layout_toEndOf="@+id/zeroS"
+        android:onClick="button_add"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="@dimen/abc_action_bar_progress_bar_size"
+        android:text="2"
+        android:fontFamily="sans-serif-condensed"
+
+        android:id="@+id/twoS"
+        android:textColor="@color/textGray"
+        android:background="@drawable/buttonstyle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/newText"
+        android:layout_toRightOf="@+id/oneS"
+        android:layout_toEndOf="@+id/oneS"
+        android:onClick="button_2"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="@dimen/abc_action_bar_progress_bar_size"
+        android:text="9"
+        android:fontFamily="sans-serif-condensed"
+
+        android:id="@+id/nineS"
+        android:textColor="@color/textGray"
+        android:background="@drawable/buttonstyle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/fiveS"
+        android:layout_toRightOf="@+id/eightS"
+        android:layout_toEndOf="@+id/eightS"
+        android:onClick="button_9"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="@dimen/abc_action_bar_progress_bar_size"
+        android:text="8"
+        android:fontFamily="sans-serif-condensed"
+
+        android:id="@+id/eightS"
+        android:textColor="@color/textGray"
+        android:background="@drawable/buttonstyle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/fiveS"
+        android:layout_toRightOf="@+id/sevenS"
+        android:layout_toEndOf="@+id/sevenS"
+        android:onClick="button_8"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="BACK"
+        android:fontFamily="sans-serif-condensed"
+
+        android:id="@+id/finish"
+        android:textColor="@color/textGray"
+        android:onClick="finishButton"
+        android:layout_alignTop="@+id/addS"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
